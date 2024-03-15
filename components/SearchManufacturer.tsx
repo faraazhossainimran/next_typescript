@@ -1,12 +1,13 @@
 "use client"
 
 import { manufacturers } from "@/constants"
-import { SearchManufacturerProps } from "@/types"
+import { SearchManuFacturerProps } from "@/types"
+// import { SearchManufacturerProps } from "@/types"
 import { Combobox, Transition } from "@headlessui/react"
 import Image from "next/image"
 import { Fragment, useState } from "react"
 
-const SearchManufacturer = ({ manufacturer, setManufacturer }: SearchManufacturerProps) => {
+const SearchManufacturer = ({ manufacturer, setManufacturer }: SearchManuFacturerProps) => {
 
     const [query, setQuery] = useState("");
     const filteredManufacturers = query === "" ? manufacturers : manufacturers.filter((item) => (
